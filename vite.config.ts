@@ -12,4 +12,11 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  vite: {
+    // Keep the AI SDK React hooks on the same React instance as the app.
+    optimizeDeps: {
+      exclude: ["@ai-sdk/react"],
+      include: ["use-sync-external-store/shim", "swr", "throttleit", "ai"],
+    },
+  },
 });
