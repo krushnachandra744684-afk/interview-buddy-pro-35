@@ -97,7 +97,7 @@ function InterviewScreen() {
 function InterviewSession({ roleId, roleTitle }: { roleId: string; roleTitle: string }) {
   const transport = useMemo(
     () => new DefaultChatTransport({ api: "/api/chat", body: { roleId } }),
-    [roleId]
+    [roleId],
   );
   const { messages, sendMessage, status, error } = useChat({
     id: `interview-${roleId}`,
@@ -154,11 +154,7 @@ function InterviewSession({ roleId, roleTitle }: { roleId: string; roleTitle: st
             <span
               key={index}
               className={`h-1.5 w-10 rounded-full ${
-                index < answers
-                  ? "bg-accent"
-                  : index === answers
-                    ? "bg-primary"
-                    : "bg-secondary"
+                index < answers ? "bg-accent" : index === answers ? "bg-primary" : "bg-secondary"
               }`}
             />
           ))}
@@ -241,8 +237,8 @@ function ReportCard({ report, roleTitle }: { report: string; roleTitle: string }
           {roleTitle} report card
         </h1>
         <p className="mt-2 text-sm text-muted-foreground">
-          Scores per question, your strengths, what to sharpen, and a model answer for your
-          weakest response.
+          Scores per question, your strengths, what to sharpen, and a model answer for your weakest
+          response.
         </p>
 
         <article className="mt-8 rounded-2xl border border-border bg-card p-7 shadow-[0_12px_40px_-24px_rgba(16,32,64,0.5)]">

@@ -32,7 +32,6 @@ export const ROLES: RoleMeta[] = [
   },
 ];
 
-export const getRole = (id: string): RoleMeta | undefined =>
-  ROLES.find((role) => role.id === id);
+export const getRole = (id: string): RoleMeta | undefined => ROLES.find((role) => role.id === id);
 
 export const TOTAL_QUESTIONS = 5;

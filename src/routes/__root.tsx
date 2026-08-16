@@ -80,10 +80,16 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "InterviewPilot — AI Mock Interviews" },
-      { name: "description", content: "Practise realistic mock interviews and get a scored report card." },
+      {
+        name: "description",
+        content: "Practise realistic mock interviews and get a scored report card.",
+      },
       { name: "author", content: "Lovable" },
       { property: "og:title", content: "InterviewPilot — AI Mock Interviews" },
-      { property: "og:description", content: "Practise realistic mock interviews and get a scored report card." },
+      {
+        property: "og:description",
+        content: "Practise realistic mock interviews and get a scored report card.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@Lovable" },

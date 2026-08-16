@@ -36,9 +36,7 @@ function RolePicker() {
             height={512}
             className="size-10 rounded-lg"
           />
-          <span className="font-display text-lg font-semibold tracking-tight">
-            InterviewPilot
-          </span>
+          <span className="font-display text-lg font-semibold tracking-tight">InterviewPilot</span>
         </header>
 
         <section className="mt-14 max-w-2xl">
@@ -46,8 +44,8 @@ function RolePicker() {
             A mock interview that actually tells you where you stand.
           </h1>
           <p className="mt-5 text-lg text-muted-foreground">
-            Five role-specific questions, asked one at a time by an AI interviewer. Answer in
-            your own words and finish with a scored report card.
+            Five role-specific questions, asked one at a time by an AI interviewer. Answer in your
+            own words and finish with a scored report card.
           </p>
           <ul className="mt-7 flex flex-wrap gap-x-7 gap-y-3 text-sm text-muted-foreground">
             <li className="flex items-center gap-2">
