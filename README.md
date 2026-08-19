@@ -1,4 +1,4 @@
-# InterviewPilot — AI Mock Interview Bot (July 2026)
+# InterviewPilot — AI Mock Interview Bot
 
 A mock interview app that simulates a realistic 5-question technical interview,
 then grades your answers and hands you a scored report card with strengths,
